@@ -83,7 +83,7 @@ public class CrispyMachine extends JavaPlugin implements SlimefunAddon {
         GasolineGenerator gasolineGenerator = new GasolineGenerator(itemGroup, Items.GASOLINE_GENERATOR, RecipeType.ENHANCED_CRAFTING_TABLE, gasolineGeneratorRecipe);
         Printer printer = new Printer(itemGroup, Items.PRINTER, RecipeType.ENHANCED_CRAFTING_TABLE, printerRecipe);
         GeneralTemplate generalTemplate = new GeneralTemplate(itemGroup, Items.GENERAL_TEMPLATE, new RecipeType(Items.PRINTER, "PRINTER"), new ItemStack[]{SlimefunItems.REINFORCED_ALLOY_INGOT});
-        Copier copier = new Copier(itemGroup, Items.COPIER, RecipeType.ENHANCED_CRAFTING_TABLE, copierRecipe);
+        Copier copier = new Copier(itemGroup, Items.COPIER, RecipeType.NULL, copierRecipe);
         Menu menu = new Menu(itemGroup, Items.MENU, RecipeType.ENHANCED_CRAFTING_TABLE, menuRecipe);
         TearOfNewton tearOfNewton = new TearOfNewton(itemGroup, Items.TEAR_OF_NEWTON, RecipeType.ENHANCED_CRAFTING_TABLE, tearOfNewtonRecipe);
 
@@ -134,11 +134,11 @@ public class CrispyMachine extends JavaPlugin implements SlimefunAddon {
                 new ItemStack(Material.REDSTONE), SlimefunItems.STEEL_PLATE, new ItemStack(Material.REDSTONE),
                 new ItemStack(Material.LAPIS_LAZULI), new ItemStack(Material.REDSTONE), new ItemStack(Material.LAPIS_LAZULI)
         };
-        ExpGiver expGiverI = new ExpGiver(itemGroup, Items.EXP_GIVER_I, RecipeType.ENHANCED_CRAFTING_TABLE, expGiverIRecipe, 1);
+        ExpGiver expGiverI = new ExpGiver(itemGroup, Items.EXP_GIVER_I, RecipeType.NULL, expGiverIRecipe, 1);
         expGiverI.register(this);
 
         for(int i = 2; i<=10; i++) {
-            ExpGiver giver = new ExpGiver(itemGroup, Items.get("EXP_GIVER_" + toRoman(i)), RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[]{
+            ExpGiver giver = new ExpGiver(itemGroup, Items.get("EXP_GIVER_" + toRoman(i)), RecipeType.NULL, new ItemStack[]{
                     Items.get("EXP_GIVER_" + toRoman(i - 1)), Items.get("EXP_GIVER_" + toRoman(i - 1))
             }, i);
             giver.register(this);
