@@ -79,7 +79,7 @@ public class CrispyMachine extends JavaPlugin implements SlimefunAddon {
         Gasoline gasoline = new Gasoline(itemGroup, Items.GASOLINE, RecipeType.SMELTERY, oilRecipe);
         CrispyMachineCore crispyMachineCore = new CrispyMachineCore(itemGroup, Items.CRISPY_MACHINE_CORE, RecipeType.ENHANCED_CRAFTING_TABLE, crispyMachineCoreRecipe);
         CrispyMachineShell crispyMachineShell = new CrispyMachineShell(itemGroup, Items.CRISPY_MACHINE_SHELL, RecipeType.ENHANCED_CRAFTING_TABLE, crispyMachineShellRecipe);
-        DieselGenerator dieselGenerator = new DieselGenerator(itemGroup, Items.DIESEL_GENERATOR, RecipeType.ENHANCED_CRAFTING_TABLE, dieselGeneratorRecipe);
+        DieselGenerator dieselGenerator = new DieselGenerator(itemGroup, Items.DIESEL_GENERATOR_BIG, RecipeType.ENHANCED_CRAFTING_TABLE, dieselGeneratorRecipe);
         GasolineGenerator gasolineGenerator = new GasolineGenerator(itemGroup, Items.GASOLINE_GENERATOR, RecipeType.ENHANCED_CRAFTING_TABLE, gasolineGeneratorRecipe);
         Printer printer = new Printer(itemGroup, Items.PRINTER, RecipeType.ENHANCED_CRAFTING_TABLE, printerRecipe);
         GeneralTemplate generalTemplate = new GeneralTemplate(itemGroup, Items.GENERAL_TEMPLATE, new RecipeType(Items.PRINTER, "PRINTER"), new ItemStack[]{SlimefunItems.REINFORCED_ALLOY_INGOT});
