@@ -20,7 +20,7 @@ public class DieselGenerator extends AGenerator {
     @Nonnull
     @Override
     public String getInventoryTitle() {
-        return "&e柴油发电机";
+        return "&e大型柴油发电机";
     }
 
     @Override

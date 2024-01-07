@@ -23,7 +23,7 @@ public class CrispyMachine extends JavaPlugin implements SlimefunAddon {
         /*
          * Creating a new Category
          */
-        ItemStack categoryItem = new CustomItemStack(Material.BLAST_FURNACE, "&e酥脆机器", "", "&a> Click to open");
+        ItemStack categoryItem = new CustomItemStack(Material.BLAST_FURNACE, "&e酥脆机器", "", "&a> 点击打开");
 
         // Give your Category a unique id.
         NamespacedKey categoryId = new NamespacedKey(this, "crispy_machine");
